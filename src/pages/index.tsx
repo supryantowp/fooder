@@ -30,9 +30,6 @@ const Index = () => (
         color='white'
         isRound
         icon={<Icon as={IoIosNotifications} boxSize={5} />}
-        _hover={{
-          bgColor: 'primary',
-        }}
       />
     </Flex>
 
@@ -84,13 +81,7 @@ const Index = () => (
             </Box>
           </Flex>
         </Box>
-        <Image
-          h='323px'
-          htmlHeight='323px'
-          borderRadius='xl'
-          zIndex={-1}
-          src='/foods-1.png'
-        />
+        <Image borderRadius='xl' zIndex={-1} src='/foods-1.png' />
       </Box>
     </SimpleGrid>
   </>
