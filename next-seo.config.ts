@@ -10,19 +10,19 @@ export const SEO: DefaultSeoProps = {
     site_name: siteConfig.title,
     images: [
       {
-        url: 'https://fooder.supryantowp/social.png',
+        url: 'https://fooder.supryantowp.tech/social.png',
         width: 800,
         height: 600,
         alt: 'Fooder',
       },
       {
-        url: 'https://fooder.supryantowp/social.png',
+        url: 'https://fooder.supryantowp.tech/social.png',
         width: 900,
         height: 800,
         alt: 'Fooder',
       },
-      { url: 'https://fooder.supryantowp/social.png' },
-      { url: 'https://fooder.supryantowp/social.png' },
+      { url: 'https://fooder.supryantowp.tech/social.png' },
+      { url: 'https://fooder.supryantowp.tech/social.png' },
     ],
   },
   title: 'Welcome!',
