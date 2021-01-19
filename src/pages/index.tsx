@@ -84,7 +84,13 @@ const Index = () => (
             </Box>
           </Flex>
         </Box>
-        <Image borderRadius='xl' zIndex={-1} src='/foods-1.png' />
+        <Image
+          h='323px'
+          htmlHeight='323px'
+          borderRadius='xl'
+          zIndex={-1}
+          src='/foods-1.png'
+        />
       </Box>
     </SimpleGrid>
   </>
