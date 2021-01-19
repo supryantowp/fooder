@@ -8,10 +8,31 @@ export const SEO: DefaultSeoProps = {
     locale: 'en_ID',
     url: siteConfig.url,
     site_name: siteConfig.title,
+    images: [
+      {
+        url: 'https://fooder.supryantowp/social.png',
+        width: 800,
+        height: 600,
+        alt: 'Fooder',
+      },
+      {
+        url: 'https://fooder.supryantowp/social.png',
+        width: 900,
+        height: 800,
+        alt: 'Fooder',
+      },
+      { url: 'https://fooder.supryantowp/social.png' },
+      { url: 'https://fooder.supryantowp/social.png' },
+    ],
   },
   title: 'Welcome!',
   titleTemplate: `%s • ${siteConfig.title}`,
   description: siteConfig.description,
+  twitter: {
+    handle: '@supryantowp',
+    site: '@site',
+    cardType: 'summary_large_image',
+  },
 }
 
 export const SocialsProfileSEO: SocialProfileJsonLdProps = {

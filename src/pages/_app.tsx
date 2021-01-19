@@ -1,11 +1,10 @@
 import 'focus-visible'
 
-import { ChakraProvider, Flex } from '@chakra-ui/react'
+import { ChakraProvider, Container, Flex } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo'
 
-import Footer from '@/component/footer'
-import Navbar from '@/component/navbar'
+import BottomNavbar from '@/component/bottom-navbar'
 import theme from '@/theme'
 import { SEO, SocialsProfileSEO } from '~/next-seo.config'
 import siteConfig from '~/site.config'
@@ -16,11 +15,12 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <DefaultSeo {...SEO} canonical={siteConfig.url + (router.asPath || '')} />
       <SocialProfileJsonLd {...SocialsProfileSEO} />
 
-      <Flex direction='column' justify='space-between' minH='100vh'>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-      </Flex>
+      <Container p={0} shadow='sm'>
+        <Flex direction='column' justify='space-between' minH='100vh'>
+          <Component {...pageProps} />
+          <BottomNavbar />
+        </Flex>
+      </Container>
     </ChakraProvider>
   )
 }

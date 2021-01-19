@@ -1,6 +1,6 @@
 export const siteConfig = {
-  title: 'BoNext',
-  description: ' An Boilerplate Next.js for your next project ✨',
+  title: 'Fooder',
+  description: 'and delivery food come to your home',
   url: 'https://bonext.vercel.app',
   socials: {
     Github: 'https://github.com/supryantowp/bonext',
